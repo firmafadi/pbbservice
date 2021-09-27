@@ -17,11 +17,11 @@ class ServicePBBController extends Controller
         return response()->json((new PBBService())->penetapan([
             'tahun'=>'2021',
             'kel'=>'0',
-            'tipe'=>'2',
-            'nop'=>'123124',
+            'tipe'=>'1',
+            'nop'=>'820401000300100280',
             'susulan'=>'0',
-            'tanggal'=>'234234',
-            'uname'=>'23424'
+            'tanggal'=>'2021-09-25',
+            'uname'=>'vtax_deploy'
         ]));
     }
 

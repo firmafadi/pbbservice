@@ -4,9 +4,9 @@
     use App\Services\TaxRequest\TaxPenilaianMassal;
     use App\Services\TaxRequest\TaxPenilaianTanah;
     use App\Services\TaxRequest\TaxPenilaianBangunan;
+    use App\Services\TaxRequest\TaxHitungDenda;
 
     class PBBService{
-
         public function penetapan($param){
             return (new TaxPenetapan($param))->getRemoteResponse();
         }
@@ -23,5 +23,8 @@
             return (new TaxPenilaianBangunan($param))->getRemoteResponse();
         }
 
+        public function hitungDenda($param){
+            return (new TaxHitungDenda($param))->getRemoteResponse();
+        }
     }
 ?>

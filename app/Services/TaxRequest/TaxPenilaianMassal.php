@@ -9,8 +9,7 @@ class TaxPenilaianMassal extends TaxCommon{
     protected $TIPE;
     protected $NOP;
     protected $SUSULAN;
-    protected $TANGGAL;
-    protected $USER;
+    protected $NOPELAYANAN;
 
     public function __construct($param){
         $this->PAN  = 'TPM';
